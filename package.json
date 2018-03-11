@@ -12,8 +12,7 @@
     "url": "git+https://github.com/trucyx/polyfill.git"
   },
   "keywords": [
-    "polyfill",
-    "movie"
+    "polyfill"
   ],
   "author": "trucyx",
   "license": "MIT",

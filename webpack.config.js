@@ -17,14 +17,24 @@ module.exports = {
         ]
     },
     entry: {
-        entry: './src/index'
+        'polyfill': './src/polyfill',
+        'polyfill-webpack': ['babel-polyfill', './src/polyfill-webpack'],
+
+        'from': './src/from',
+        'assign': './src/assign',
+        'assign-alias': './src/assign-alias',
+        'includes': './src/includes',
+        'promise': './src/promise',
+        'set': './src/set',
+
+        'class': './src/class',
+        'class-without-helpers': './src/without-helpers/class'
     },
     output: {
         path: path.resolve('dist'),
         filename: '[name].js',
         libraryTarget: 'var'
     },
-    // devtool: 'cheap-module-eval-source-map',
     externals: [],
     resolve: {
         modules: [
